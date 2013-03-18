@@ -10,4 +10,5 @@ clean:
 	rm -f *.bbl
 	rm -f *.pdf
 	rm -f *.dvi
+	rm -f *.out
 	rm -f *~
