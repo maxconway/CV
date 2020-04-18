@@ -1,7 +1,7 @@
 CV.pdf: CV.tex 
-	pdflatex CV.tex
-	pdflatex CV.tex
-	pdflatex CV.tex
+	pdflatex -halt-on-error CV.tex
+	pdflatex -halt-on-error CV.tex
+	pdflatex -halt-on-error CV.tex
 
 clean:
 	rm -f *.log

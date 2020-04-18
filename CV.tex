@@ -1,7 +1,9 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[10pt,a4paper,sans]{moderncv}
 \moderncvstyle{classic}
 \nopagenumbers{} 
-\usepackage[scale=0.8]{geometry}
+\usepackage[margin=1cm]{geometry}
+\usepackage{tgheros}
+\usepackage{siunitx}
 
 %CUSTOMIZE
 \setlength{\hintscolumnwidth}{1.2\hintscolumnwidth}
@@ -11,23 +13,39 @@
 %\definecolor{color1}{HTML}{000050}% dark blue
 \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
-\moderncvcolor{grey}
+\moderncvcolor{burgundy}
 
 %INFO
 \firstname{Maxwell}
 \familyname{Conway}
 %\address{87 Ashurst Avenue}{Southend-on-Sea, SS2 4TE}{}
-\address{Selwyn College}{Cambridge}{}
+\address{12 Grange Court}{Cambridge}{}
 \mobile{07870495152} 
-\email{max@maxwellconway.com}
+\email{conway.max1@gmail.com}
 
 \begin{document}
 \makecvtitle
 \section{Education}
-\cventry{Present}{\textbf{Msci Systems Biology}}{\textbf{Cambridge University}}{}{}{}{
-\cvlistitem{Dissertation: multi-objective optimization in design of bacterial genomes}}
-\cventry{2009-2012}{\textbf{BA Computer Science}}{\textbf{Cambridge University}}{2.i}{}{}{}{
-	\cvlistitem{Dissertation: created a user interaction prediction system using a variety of classification techniques}
+
+\cventry{2014-2018}{PhD Computer Science}{Cambridge University}{}{}{}{
+	\cvlistitem{Machine learning methods for detecting structure in metabolic flow networks}
+	\cvlistitem{Conducted large scale simulations of cells via monte carlo flux balance analysis}
+	\cvlistitem{Applied a variety of unsupervised learning techniques to results}
+	\cvlistitem{Used supervised learning techniques to create predictions of cellular behaviour, in particular deep neural networks via Tensorflow and regression trees via Cubist}
+	\cvlistitem{6 papers published}
+	\cvlistitem{Simulation software (fbar) released with \num{> 13500} downloads to date}
+	\cvlistitem{Research conducted mainly in R, on Google Cloud Platform}
+	\cvlistitem{Also taught undergraduate bioinformatics}
+}
+
+\cventry{2012-2013}{Msci Systems Biology}{Cambridge University}{}{}{}{
+	\cvlistitem{Covered a wide variety of topics in systems and synthetic biology, in addition of comutational and high throughput experimental methods}
+	\cvlistitem{Group project: constructed a quantitative particle based simulation of cellular division in one week}
+	\cvlistitem{Dissertation: automated design of bacteria for electricity generation, by evolutionary multi-objective optimization}
+}
+
+\cventry{2009-2012}{BA Computer Science}{Cambridge University}{}{}{}{
+	\cvlistitem{Dissertation: created a user interaction prediction system using a variety of classification techniques. Predicted user command line input with 84\% accuracy, a 20\% improvement on the previous baseline.}
 	\cvlistitem{Group project: worked in a team of six to construct a system to predict stock tip values for youDevise}
 	\cvlistitem{with Physics and Mathematics}
 }
@@ -37,27 +55,32 @@
 	\cvlistitem{GCSE results in top 10 in my school, with 7 A* and 4 A grades}
 }
 
-\section{Work Experience}
-\cventry{part time}{\textbf{Technical Director}}{\textbf{Study Magnet}}{Cambridge}{}{}{
-\cvlistitem{Part time work in a startup working with the University Library to help students use textbooks more effectively}
-\cvlistitem{Through to second round of Downing Enterprise investment competition}
+\section{Employment}
+
+\cventry{2019-}{Software engineer}{Kynesim Ltd}{}{}{}{
+	\cvlistitem{Product development consultancy}
+	\cvlistitem{Worked on a wide variety of projects across hardware, embedded software, and cloud}
+	\cvlistitem{Developed hardware and software prototypes for new fitness tracking device. Mainly Python, with some R for analytics.}
+	\cvlistitem{Managed development of new public transport ticketing system from first hardware prototype through certification, manufacturing and quality control and field deployment}
 }
 
-\cventry{2011}{\textbf{Associate Product Manager Intern}}{\textbf{Google}}{Z\"{u}rich}{}{}{
-\cvlistitem{Associate Product Manager Intern in commerce, working on Google Offers}
+\cventry{2018}{CTO}{Rubber Duck AI}{}{}{}{
+	\cvlistitem{Founded startup building machine learning driven code analytics and debugging tools}
+	\cvlistitem{Supported by Entrepreneur First incubator, with £14k of investment at £280k valuation}
 }
 
-\cventry{2007-2008}{\textbf{Financial Director}}{\textbf{Shibby Enterprises}}{Southend-on-Sea}{}{}
-\cvlistitem{Financial Director of Shibby Enterprises, a promotions company}
-\cvlistitem{Judged best Young Enterprise company in region}
-\cvlistitem{Responsibilities included distribution of 4000 posters and letters in addition to accounting}
+\cventry{2013}{Data Engineer}{Crowdsurfer}{}{}{}{
+	\cvlistitem{Data engineer at a crowd funding analytics startup}
+	\cvlistitem{Graphing in D3 with Angular.js and Matplotlib, with MongoDB backend. Python and Javascript on Heroku backend}
+}
 
-%	study magnet should be included normally
+\cventry{2013}{Technical Director}{Study Magnet}{Cambridge}{}{}{
+	\cvlistitem{Part time work in a startup working with the University Library to help students use textbooks more effectively}
+	\cvlistitem{Through to second round of Downing Enterprise investment competition}
+}
 
-\section{Extracurricular}
-\cvitem{Student Rep}{Elected as representative of Computer Science undergraduates, both on the Faculty Board and on the Student Union Council}
-\cvitem{Charity}{Charities Officer for college and college representative to Cambridge RAG}
-\cvitem{Science Society}{Member of school Science Society, which organised numerous lectures and challenges in engineering and problem solving, including a three month group project to design a line following and maze solving robot.}
-\cvitem{Fencing}{Under 18 East of England Youth Fencing Champion, 13th in British Youth Championships and 4th in UK in Leon Paul Junior series}
+\cventry{2011}{Associate Product Manager Intern}{Google}{}{}{}{
+	\cvlistitem{Associate Product Manager Intern in commerce, working on Google Offers}
+}
 
 \end{document}
