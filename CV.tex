@@ -1,67 +1,92 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-\moderncvstyle{banking}
+\documentclass[10pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
 \nopagenumbers{} 
-\usepackage[scale=0.8]{geometry}
-\usepackage{todonotes}
+\usepackage[margin=0.8cm]{geometry}
+\usepackage{siunitx}
+\usepackage[condensed]{roboto}  %% Option 'sfdefault' only if the base font of the document is to be sans serif
 
 %CUSTOMIZE
-\setlength{\hintscolumnwidth}{1.2\hintscolumnwidth}
-\definecolor{color0}{rgb}{0.1,0.1,0.1}% black
-%\definecolor{color1}{HTML}{014421}% forestgreen
-\definecolor{color1}{HTML}{800000}% maroon
-%\definecolor{color1}{HTML}{000050}% dark blue
-\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+% \setlength{\hintscolumnwidth}{1\hintscolumnwidth}
+% \definecolor{color0}{rgb}{0,0,0}% black
+% \definecolor{color1}{HTML}{014421}% forestgreen
+% %\definecolor{color1}{HTML}{800000}% maroon
+% %\definecolor{color1}{HTML}{000050}% dark blue
+% \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
-%\moderncvcolor{grey}
+\moderncvcolor{orange}
 
 %INFO
 \firstname{Maxwell}
 \familyname{Conway}
-\address{87 Ashurst Avenue}{Southend-on-Sea, SS2 4TE}{}
-%\address{Selwyn College}{Cambridge}{}
+%\address{87 Ashurst Avenue}{Southend-on-Sea, SS2 4TE}{}
+\address{12 Grange Court}{Cambridge, UK}{}
 \mobile{07870495152} 
-\email{max@maxwellconway.com}
+\email{conway.max1@gmail.com}
 
 \begin{document}
 \makecvtitle
+\section{Selected skills and experience}
+	\cvlistitem{Experience modelling biological systems throughout my PhD in Computer Science}
+	\cvlistitem{ML (including deep learning) experience in my PhD and other academic projects, including creating a novel network dimension reduction technique}
+	\cvlistitem{Python experience includes public facing websites, use of Tensorflow for academic projects and embedded ML in fitness tracking device}
+	\cvlistitem{Experienced with using R for all kinds of data manipulation. Three packages published on CRAN, one of which is specifically for large scale biological systems modelling}
+	\cvlistitem{PhD was conducted mainly with ML infrastructure on Google Cloud Platform. Also experienced with AWS}
+	\cvlistitem{Working knowledge of plant biology from Masters in Systems Biology}
+	\cvlistitem{Supervised undergraduate bioinformatics for 3 years}
+	\cvlistitem{Founded an ML startup and raised \pounds14k of investment at \pounds280k valuation. Experience working for and with other startups as an engineer}
+
+
 \section{Education}
-\cventry{2012-2013}{\textbf{M.Sci. Systems Biology}}{\textbf{Cambridge University}}{}{}{}{
-	\cvlistitem{Focused on Synthetic Biology; Analysis, Handling and Modelling of large datasets and networks}
-	\cvlistitem{Covered topics in Big Data and multivariate statistics}
-	\cvlistitem{Dissertation: automated design of bacteria for production of electricity}
-}
-\cventry{2009-2012}{\textbf{B.A. Computer Science}}{\textbf{Cambridge University}}{2.i}{}{}{}{
-	\cvlistitem{Dissertation: machine learning based prediction of user behaviour}
-	\cvlistitem{Group project: worked in a team of six to construct a system to predict stock tip values for YouDevise}
-	\cvlistitem{Additional optional modules in Physics and Mathematics}
-}
 
-\cventry{2002-2009}{}{Southend High School for Boys}{}{}{}{}{}{
-	\cvlistitem{A level: top grades in Maths, Further Maths, Chemistry and Physics}
-	\cvlistitem{GCSE: 7 A* and 4 A grades}
+\cventry{2014-2018}{PhD Computer Science}{Cambridge University}{}{}{}{
+	\cvlistitem{Title: Machine learning methods for detecting structure in metabolic flow networks}
+	\cvlistitem{Developed new software for simulating cell metabolic behaviour that was \SI{3}{\times} faster than the previous state of the art}
+	\cvlistitem{Created the two largest datasets of simulated cells of their kind (\SI{1000000}[\sim]{} simulations)}
+	\cvlistitem{Predicted cellular behaviour using neural networks and regression trees, and used the results for network clustering via information gain, outperforming all existing techniques}
+	\cvlistitem{Taught 5 different undergraduate courses}
+	\cvlistitem{Outcomes: 6 publications, two pieces of open source software released with \SI{160686}[>]{} total downloads}
 }
 
-\section{Employment}
-
-\cventry{2013}{\textbf{Technical Director}}{\textbf{Study Magnet}}{Cambridge}{}{}{
-	\cvlistitem{Working with Cambridge University Libraries on a content recommendation engine}
-	\cvlistitem{Through to second round of Downing Enterprise investment competition}
+\cventry{2012-2013}{Msci Systems Biology}{Cambridge University}{}{}{}{
+	\cvlistitem{Wide variety of topics in systems and synthetic biology, in addition to high throughput experimental and computational methods}
+	\cvlistitem{Dissertation: automated design of bacteria for electricity generation, by evolutionary multi-objective optimization}
+	\cvlistitem{Group project: constructed a fully quantitative particle based simulation of cellular division in one week}
 }
 
-\cventry{Jun-Oct 2011}{\textbf{Associate Product Manager Intern}}{\textbf{Google}}{Z\"{u}rich}{}{}{
-	\cvlistitem{Associate Product Manager Intern in Commerce, working on Google Offers}
+\cventry{2009-2012}{BA Computer Science}{Cambridge University}{}{}{}{
+	\cvlistitem{Dissertation: created a classification system to predict user interaction. Outperformed state of the art by 20\%}
+	\cvlistitem{Group project: worked in a team of six to construct a system to predict stock tip values}
+	\cvlistitem{with Physics and Mathematics}
 }
 
-\cventry{2007-2008}{\textbf{Financial Director}}{\textbf{Shibby Enterprises}}{Southend-on-Sea}{}{}{
-	\cvlistitem{A promotions company with 23 employees, judged best Young Enterprise company in region}
-	\cvlistitem{Additional responsibilities included publicity and procurement}
+\cventry{2002-2009}{Southend High School for Boys}{}{}{}{}{}{
+	\cvlistitem{A level: top grades in Maths, Further Maths, Chemistry and Physics; GCSE results in top 10 in the school}
 }
 
-\section{Extracurricular}
-	\cvitem{Student Rep}{Elected as representative of 280 Computer Science undergraduates, both on the Faculty Board and on the Student Union Council; introduced use of Moderator crowdsourcing platform}
-	\cvitem{Charity}{Charities Officer for college and college representative to Cambridge RAG}
-%	\cvitem{Fencing}{Under 18 East of England Youth Fencing Champion, and 4th in UK in Leon Paul Junior series}
-	\cvitem{UBS challenge}{Came in top 20 in UBS challenge, a stock trading game open to students of LSE, Oxford, Cambridge and Warwick universities} 
-	\cvitem{Debating}{President of debating society, competed in professionally judged competitions and before my peers.}
+\section{Selected Employment}
+
+\cventry{2020-}{Chief Executive officer}{AnyFab Ltd}{}{}{}{
+	\cvlistitem{Founded a startup creating the world's first fully browser-based CAD software, integrated with real time quoting and ordering from manufacturers}
+}
+
+\cventry{2019-2020}{Software consultant}{Kynesim Ltd}{}{}{}{
+	\cvlistitem{Product development consultancy; I worked on a wide variety of projects across hardware, embedded software, and cloud}
+	\cvlistitem{Developed software and led hardware development on a new sports activity tracker with activity prediction based on GPS and accelerometer logging}
+	\cvlistitem{Managed development and deployment of new public transport ticketing system from first hardware prototype through certification, manufacturing and quality control and field deployment}
+}
+
+\cventry{2018}{Chief Technology Officer}{Rubber Duck AI}{}{}{}{
+	\cvlistitem{Founded a startup building machine learning driven code analytics and debugging tools}
+	\cvlistitem{}
+}
+
+\cventry{2013}{Data Engineer}{Crowdsurfer}{}{}{}{
+	\cvlistitem{Data engineer at a crowd funding analytics startup}
+	\cvlistitem{Developed visualisations and analyses in frontend and backend}
+}
+
+\cventry{2011}{APM Intern}{Google}{}{}{}{
+	\cvlistitem{Associate Product Manager Intern in commerce, working on Google Offers}
+}
 
 \end{document}
