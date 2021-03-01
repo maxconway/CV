@@ -13,13 +13,15 @@
 % %\definecolor{color1}{HTML}{000050}% dark blue
 % \definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
 
-\moderncvcolor{orange}
+
+\definecolor{color1}{HTML}{BF5700}
+%\moderncvcolor{Orange}
 
 %INFO
 \firstname{Maxwell}
 \familyname{Conway}
 %\address{87 Ashurst Avenue}{Southend-on-Sea, SS2 4TE}{}
-\address{12 Grange Court}{Cambridge, UK}{}
+%\address{12 Grange Court}{Cambridge, UK}{}
 \mobile{07870495152} 
 \email{conway.max1@gmail.com}
 
@@ -28,11 +30,11 @@
 
 \section{Education}
 
-\cventry{2014-2018}{PhD Computer Science}{Cambridge University}{}{}{}{
-	\cvlistitem{Title: Machine learning methods for detecting structure in metabolic flow networks}
+\cventry{2014-2018}{PhD Computer Science}{Cambridge University}{}{}{Machine learning methods for detecting structure in metabolic flow networks}{
 	\cvlistitem{Developed new software for simulating cell metabolic behaviour that was \SI{3}{\times} faster than the previous state of the art}
 	\cvlistitem{Created the two largest datasets of simulated cells of their kind (\SI{1000000}[\sim]{} simulations)}
 	\cvlistitem{Predicted cellular behaviour using neural networks and regression trees, and used the results for network clustering via information gain, outperforming all existing techniques}
+	\cvlistitem{Taught 5 courses for undergraduates, specialising in Bioinformatics and Economics courses}
 	\cvlistitem{Two pieces of open source software released with \SI{160000}[>]{} downloads}
 	\cvlistitem{6 publications and 125 citations}
 }
@@ -53,19 +55,12 @@
 	\cvlistitem{A level: top grades in Maths, Further Maths, Chemistry and Physics; GCSE results in top 10 in the school}
 }
 
-\section{Voluntary and recreational}
-
-	\cvlistitem{Treasurer of student union at university, managing \SI{30000}[\pounds]{} budget}
-	\cvlistitem{Author of several open-source projects}
-	\cvlistitem{Regularly teach undergraduate Computer Scientists for Cambridge University, specialising in Economics courses}
-
 \section{Programming languages}
 	\cvlanguage{C}{Taught at University, have written production logging and communications software}{}
-	\cvlanguage{C++}{Taught at University, haven't used significantly since except for some bugfixes}{}
-	\cvlanguage{Java}{Taught at University, have written some production code for webserving and DB access}{}
-	\cvlanguage{Javascript}{Used on various projects including some production work, mainly with React}{}
-	\cvlanguage{Python}{Written production code including on webservers (Django) and for analytics}{}
-	\cvlanguage{R}{Have released several open source packages with significant usage, very familiar with Tidyverse ecosystem}{}
+	\cvlanguage{Java}{Taught at University, written some production backend code}{}
+	\cvlanguage{Javascript}{Used on various projects including production work, mainly with React}{}
+	\cvlanguage{Python}{Written production code including backend (Django), analytics, UI and ML code}{}
+	\cvlanguage{R}{Released several open source packages with significant usage, very familiar with Tidyverse ecosystem}{}
 	\cvlanguage{Rust}{Written production logging+test system based on Rocket webserver, various side projects}{}
 
 \section{Employment}
@@ -77,11 +72,13 @@
 \cventry{2019-2020}{Software consultant}{Kynesim Ltd}{}{}{}{
 	\cvlistitem{Product development consultancy; I worked on a wide variety of projects across hardware, embedded software, and cloud}
 	\cvlistitem{Developed software and led hardware development on a new sports activity tracker with activity prediction based on GPS and accelerometer logging}
-	\cvlistitem{Managed development and deployment of new public transport ticketing system from first hardware prototype through certification, manufacturing and quality control and field deployment}
+	\cvlistitem{Developed cloud server and embedded client code for a critical infrastructure logging and control system}
+	\cvlistitem{Managed development and deployment of new payments device from first hardware prototype through certification, manufacturing and quality control and field deployment}
 }
 
 \cventry{2018}{Chief Technology Officer}{Rubber Duck AI}{}{}{}{
 	\cvlistitem{Founded a startup building machine learning driven code analytics and debugging tools}
+	\cvlistitem{Technically successful but struggled to find market fit so open sourced the code}
 }
 
 \cventry{2013}{Data Engineer}{Crowdsurfer}{}{}{}{
